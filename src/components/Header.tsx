@@ -91,15 +91,24 @@ const Navbar = () => {
             Home
           </Link>
           <Link
-            href="/components/post"
+            href="/about"
             className={`block py-2 px-4 ${
-              isActive('/components/post')
+              isActive('/about') ? 'bg-yellow-500 text-black' : 'hover:bg-yellow-500'
+            }`}
+            onClick={() => setIsMobileMenuOpen(false)} // Close menu on link click
+          >
+            About
+          </Link>
+          <Link
+            href="/products"
+            className={`block py-2 px-4 ${
+              isActive('/products')
                 ? 'bg-yellow-500 text-black'
                 : 'hover:bg-yellow-500'
             }`}
             onClick={() => setIsMobileMenuOpen(false)} // Close menu on link click
           >
-            Categories
+            Product
           </Link>
           <Link
             href="/contact"
