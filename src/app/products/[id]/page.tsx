@@ -60,9 +60,19 @@ const SingleProduct = () => {
         <div className="bg-gray-100 min-h-screen py-12">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {!data ? (
-                    <div className="text-center">
-                        <p>Loading product...</p>
+                    <div className="flex items-center justify-center pt-20 bg-gray-100">
+                    <div className="flex flex-col items-center">
+                      {/* Spinner */}
+                      <div
+                        className="w-16 h-16 border-4 border-blue-500 border-dashed rounded-full animate-spin"
+                        aria-label="Loading spinner"
+                      ></div>
+                      {/* Text */}
+                      <p className="mt-4 text-xl font-semibold text-gray-700">
+                        Loading, please wait...
+                      </p>
                     </div>
+                  </div>
                 ) : (
                     <div className="bg-white p-8 rounded-lg shadow-lg flex flex-col md:flex-row">
                         {/* Product Image */}

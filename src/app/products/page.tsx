@@ -37,9 +37,11 @@ const ProductsPage = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h1 className="text-4xl font-bold text-center mb-8">Our Products</h1>
                 {!data ? (
-                    <div className="text-center">
-                        <p className="text-3xl">Loading products....</p>
-                    </div>
+                    <div className="flex flex-col gap-4 items-center justify-center h-[80vh]">
+                    <p className="text-2xl font-bold tracking-wider text-blue-600">Loading...</p>
+                    <div className="w-32 h-32 rounded-full border-t border-blue-600 animate-spin"></div>;
+                  </div>
+                
                 ) : (
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
     {data.map((product) => (
