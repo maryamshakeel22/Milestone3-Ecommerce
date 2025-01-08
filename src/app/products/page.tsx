@@ -39,7 +39,7 @@ const ProductsPage = () => {
                 {!data ? (
                     <div className="flex flex-col gap-4 items-center justify-center h-[80vh]">
                     <p className="text-2xl font-bold tracking-wider text-blue-600">Loading...</p>
-                    <div className="w-32 h-32 rounded-full border-t border-blue-600 animate-spin"></div>;
+                    <div className="w-32 h-32 rounded-full border-t border-blue-600 animate-spin"></div>
                   </div>
                 
                 ) : (
